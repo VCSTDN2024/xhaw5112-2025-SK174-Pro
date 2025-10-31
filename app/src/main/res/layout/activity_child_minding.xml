@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#004400">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#06402B">
+
+        <LinearLayout
+            android:id="@+id/mainContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="56dp">
+
+            <ImageButton
+                android:id="@+id/btnBurger"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="end"
+                android:background="@android:color/transparent"
+                android:contentDescription="Menu"
+                android:src="@drawable/ic_menu" />
+
+            <TextView
+                android:id="@+id/courseTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Child Minding"
+                android:textColor="#FFC107"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginTop="16dp" />
+
+            <TextView
+                android:id="@+id/courseFee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fees: R750"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:layout_marginTop="12dp" />
+
+            <TextView
+                android:id="@+id/coursePurpose"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Purpose: To provide basic child and baby care"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:id="@+id/courseContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Content:\n• Birth to six-month old baby needs\n• Seven-month to one-year old needs\n• Toddler needs\n• Educational toys"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:layout_marginTop="8dp" />
+
+            <ImageView
+                android:id="@+id/courseImage"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="32dp"
+                android:scaleType="centerCrop"
+                android:contentDescription="Child Minding Training"
+                app:srcCompat="@drawable/child_minding" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Follow Us"
+                android:textColor="#FF9800"
+                android:textSize="16sp"
+                android:textStyle="bold|italic"
+                android:layout_gravity="center"
+                android:paddingTop="8dp"
+                android:paddingBottom="6dp" />
+
+
+            <LinearLayout
+                android:id="@+id/footer"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:padding="6dp"
+                android:background="@drawable/footer_background">
+
+                <ImageButton
+                    android:id="@+id/btnInstagram"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="#062807"
+                    android:contentDescription="Instagram"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/instagram"
+                    tools:ignore="TouchTargetSizeCheck,UseAppTint" />
+
+                <ImageButton
+                    android:id="@+id/btnTiktok"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="#062807"
+                    android:contentDescription="Tiktok"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/tiktok"
+                    tools:ignore="TouchTargetSizeCheck,UseAppTint" />
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="#062807"
+        app:itemIconTint="@android:color/white"
+        app:itemTextColor="@android:color/white"
+        app:menu="@menu/menu" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#06402B"
+    tools:context=".AboutUs">
+
+
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/mainContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <ImageButton
+                    android:id="@+id/btnBurger"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="17dp"
+                    android:translationY="16dp"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/ic_menu"
+                    android:contentDescription="Menu" />
+
+                <TextView
+                    android:id="@+id/aboutTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="About Us"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="34sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/Introduction"
+                    android:layout_width="match_parent"
+                    android:layout_height="163dp"
+                    android:layout_marginTop="24dp"
+                    android:text="TheEmpowering the Nation, a small to mid-size
+enterprise (SME) who's main focus is on upskilling
+domestic worker's and gardeners. The main aim is to
+create an easy going user friendly platform that will
+advertise the business, all them to receive requests
+for information from potential customers and provide
+quotes to the potential customers for services
+requested."
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginBottom="24dp"
+                    app:srcCompat="@drawable/about_us" />
+
+                <TextView
+                    android:id="@+id/MissionVision"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="The Empowering the Nationbrand was designed by Precious Radebe in the year 2022 and offers courses in JHB.This platform offers six weeks Short Skills Trainingprogrammes and six -month long Learnership's hoping to empower and provide more marketable skills for domestic workers and gardeners."
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginBottom="32dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Follow Us"
+                    android:textColor="#FF9800"
+                    android:textSize="16sp"
+                    android:textStyle="bold|italic"
+                    android:layout_gravity="center"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="6dp" />
+
+
+                <LinearLayout
+                    android:id="@+id/footer"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:padding="6dp"
+                    android:background="@drawable/footer_background">
+
+                    <ImageButton
+                        android:id="@+id/btnInstagram"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:background="#062807"
+                        android:contentDescription="Instagram"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/instagram"
+                        tools:ignore="TouchTargetSizeCheck,UseAppTint" />
+
+                    <ImageButton
+                        android:id="@+id/btnTiktok"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:background="#062807"
+                        android:contentDescription="Tiktok"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/tiktok"
+                        tools:ignore="TouchTargetSizeCheck,UseAppTint" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="#062807"
+        app:itemIconTint="@android:color/white"
+        app:itemTextColor="@android:color/white"
+        app:menu="@menu/menu"
+        tools:ignore="VisualLintBounds" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

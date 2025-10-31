@@ -1,0 +1,15 @@
+<resources>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">#004d00</item>
+        <item name="colorAccent">#FFA500</item>
+    </style>
+
+    <style name="CourseCheckBox">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:buttonTint">#FFA500</item>
+        <item name="android:padding">8dp</item>
+    </style>
+</resources>

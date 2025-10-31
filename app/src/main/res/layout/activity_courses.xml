@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#06402B"
+    tools:context=".Courses">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/mainContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="56dp">
+
+            <ImageButton
+                android:id="@+id/btnBurger"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="end"
+                android:layout_marginTop="40dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="Menu"
+                android:src="@drawable/ic_menu" />
+
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Courses"
+                android:textColor="#FFC107"
+                android:textSize="24sp"
+                android:gravity="center"
+                android:layout_marginTop="24dp" />
+
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Six Month Courses"
+                android:textColor="#FFC107"
+                android:textSize="24sp"
+                android:gravity="center"
+                android:layout_marginTop="32dp" />
+
+            <Button
+                android:id="@+id/btnFirstAid"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="32dp"
+                android:backgroundTint="#FF9800"
+                android:text="First Aid" />
+
+            <Button
+                android:id="@+id/btnSewing"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="2dp"
+                android:backgroundTint="#FF9800"
+                android:text="Sewing" />
+
+            <Button
+                android:id="@+id/btnLandScaping"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#FF9800"
+                android:text="Landscaping" />
+
+            <Button
+                android:id="@+id/btnLifeSkills"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="12dp"
+                android:backgroundTint="#FF9800"
+                android:text="Life Skills" />
+
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Six Week Courses"
+                android:textColor="#FFC107"
+                android:textSize="24sp"
+                android:gravity="center"
+                android:layout_marginTop="32dp" />
+
+            <Button
+                android:id="@+id/btnChildMinding"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="72dp"
+                android:backgroundTint="#FF9800"
+                android:text="Child Minding" />
+
+            <Button
+                android:id="@+id/btnCooking"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="#FF9800"
+                android:text="Cooking" />
+
+            <Button
+                android:id="@+id/btnGardenMaintenance"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#FF9800"
+                android:text="Garden Maintenance" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Follow Us"
+                android:textColor="#FF9800"
+                android:textSize="16sp"
+                android:textStyle="bold|italic"
+                android:layout_gravity="center"
+                android:paddingTop="8dp"
+                android:paddingBottom="6dp" />
+
+
+            <LinearLayout
+                android:id="@+id/footer"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:padding="6dp"
+                android:background="@drawable/footer_background">
+
+                <ImageButton
+                    android:id="@+id/btnInstagram"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="#062807"
+                    android:contentDescription="Instagram"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/instagram"
+                    tools:ignore="TouchTargetSizeCheck,UseAppTint" />
+
+                <ImageButton
+                    android:id="@+id/btnTiktok"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="#062807"
+                    android:contentDescription="Tiktok"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/tiktok"
+                    tools:ignore="TouchTargetSizeCheck,UseAppTint" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="#062807"
+        app:itemIconTint="@android:color/white"
+        app:itemTextColor="@android:color/white"
+        app:menu="@menu/menu" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

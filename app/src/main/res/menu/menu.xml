@@ -1,0 +1,26 @@
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:ignore="ExtraText">
+    <item
+        android:id="@+id/nav_home"
+        android:title="Home Page" />
+    <item
+        android:id="@+id/nav_about"
+        android:title="About Us" />
+    <item
+        android:id="@+id/nav_prices"
+        android:title="Our Discounts" />
+    <item
+        android:id="@+id/nav_enquire"
+        android:title="Enquire" />
+    <item
+        android:id="@+id/nav_quote"
+        android:title="Request Quote" />
+    <item
+        android:id="@+id/nav_courses"
+        android:title="Courses" />
+    <item
+        android:id="@+id/nav_offices"
+        android:title="Offices" />
+
+</menu>
